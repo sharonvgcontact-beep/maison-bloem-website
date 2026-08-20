@@ -8,6 +8,14 @@
   padding: 0;
 }
 
+/* Added by CustomCursor.tsx on fine-pointer (mouse) devices only. Text
+   fields keep the native text cursor so users can still see where they're
+   typing/selecting. */
+.custom-cursor-active,
+.custom-cursor-active *:not(input):not(textarea) {
+  cursor: none !important;
+}
+
 html {
   scroll-behavior: smooth;
 }

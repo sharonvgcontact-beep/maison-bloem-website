@@ -3,6 +3,7 @@ import { Fraunces, Barlow, Inter } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import CustomCursor from "@/components/CustomCursor";
 import { brand } from "@/content/brand";
 
 // Note: these expose raw --font-fraunces-raw/etc variables (not --font-heading
@@ -59,6 +60,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Nav />
         <main>{children}</main>
         <Footer />
+        <CustomCursor />
       </body>
     </html>
   );

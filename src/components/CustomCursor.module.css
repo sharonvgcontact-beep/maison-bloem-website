@@ -1,0 +1,36 @@
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(1);
+  transition: opacity 0.2s var(--ease), transform 0.15s var(--ease);
+  will-change: transform;
+  /* light halo so the black line art stays visible on rosewood/coffee
+     sections too, plus a soft dark shadow for definition on light ones */
+  filter: drop-shadow(0 0 1.5px rgba(255, 255, 255, 0.85)) drop-shadow(0 1px 2px rgba(0, 0, 0, 0.25));
+}
+
+.visible {
+  opacity: 1;
+}
+
+.clicking {
+  transform: translate(-50%, -50%) scale(0.85);
+}
+
+.hovering {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+.icon {
+  width: 100%;
+  height: 100%;
+}
