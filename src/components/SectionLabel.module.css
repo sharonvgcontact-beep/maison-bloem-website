@@ -1,0 +1,25 @@
+.label {
+  font-family: var(--font-sub);
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.rosewood {
+  color: var(--rosewood);
+}
+.lemon {
+  color: var(--lemon);
+  opacity: 0.6;
+}
+.coffee {
+  color: var(--coffee);
+  opacity: 0.55;
+}
+.gold {
+  color: var(--rosewood);
+  opacity: 0.75;
+}

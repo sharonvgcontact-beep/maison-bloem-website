@@ -1,0 +1,43 @@
+/*
+  Design tokens — Maison Bloem brand guidelines (Stacy Design, 2026).
+  Colors are exact hex values from the official palette (page 20).
+  --font-heading substitutes the licensed "Ivy Journal" with Fraunces
+  (free, italic-capable, visually close) until the real font file is
+  purchased — see README for how to swap it in.
+*/
+:root {
+  /* Brand colors */
+  --rosewood: #6b0b0c;
+  --rosewood-dark: #4a0708;
+  --rosewood-light: #8a1011;
+  --lemon: #fff8ca;
+  --lemon-dark: #f0e89a;
+  --botticelli: #cde3e8;
+  --botticelli-dark: #a8cdd5;
+  --coffee: #2d120d;
+  --coffee-mid: #3d1a12;
+  --white: #ffffff;
+
+  /* Fonts — the -raw variables are injected by next/font in layout.tsx */
+  --font-heading: var(--font-fraunces-raw), Georgia, "Times New Roman", serif;
+  --font-sub: var(--font-barlow-raw), sans-serif;
+  --font-body: var(--font-inter-raw), sans-serif;
+
+  /* Type scale */
+  --text-display: clamp(3.2rem, 7vw, 6.5rem);
+  --text-h1: clamp(2.75rem, 6vw, 5rem);
+  --text-h2: clamp(2.2rem, 4.5vw, 3.6rem);
+  --text-h3: 1.6rem;
+  --text-body: 1rem;
+  --text-small: 0.8rem;
+
+  /* Spacing */
+  --space-section: clamp(4rem, 9vw, 7.5rem);
+  --space-section-x: clamp(1.5rem, 6vw, 5rem);
+  --max-width: 1280px;
+
+  /* Misc */
+  --radius-pill: 999px;
+  --radius-sm: 3px;
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+}

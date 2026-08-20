@@ -1,0 +1,58 @@
+.row {
+  display: grid;
+  grid-template-columns: repeat(var(--cols, 3), 1fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+}
+
+.pillar {
+  padding: 0;
+}
+
+.num {
+  font-family: var(--font-heading);
+  font-size: 2.6rem;
+  font-style: italic;
+  color: var(--rosewood);
+  opacity: 0.22;
+  line-height: 1;
+  margin-bottom: 0.9rem;
+}
+
+.dark .num {
+  color: var(--lemon);
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--coffee);
+  margin-bottom: 0.7rem;
+  line-height: 1.2;
+}
+
+.dark .title {
+  color: var(--lemon);
+}
+
+.body {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.8;
+  color: var(--coffee);
+  opacity: 0.72;
+}
+
+.dark .body {
+  color: var(--lemon);
+  opacity: 0.62;
+}
+
+@media (max-width: 760px) {
+  .row {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}

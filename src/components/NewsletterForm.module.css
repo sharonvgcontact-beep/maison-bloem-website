@@ -1,0 +1,84 @@
+.form {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.input {
+  flex: 1;
+  min-width: 200px;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  padding: 0.9rem 1.3rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(255, 248, 202, 0.25);
+  background: rgba(255, 248, 202, 0.06);
+  color: var(--lemon);
+  outline: none;
+}
+.input::placeholder {
+  color: rgba(255, 248, 202, 0.45);
+}
+.input:focus {
+  border-color: var(--lemon);
+}
+
+.button {
+  font-family: var(--font-sub);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  background: var(--lemon);
+  color: var(--rosewood);
+  border: none;
+  padding: 0.9rem 1.8rem;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+.button:hover:not(:disabled) {
+  background: var(--lemon-dark);
+}
+.button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.message {
+  width: 100%;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  margin-top: 0.75rem;
+  color: var(--lemon);
+  opacity: 0.75;
+}
+
+.error {
+  color: #ffb4b0;
+  opacity: 1;
+}
+
+.onLight .input {
+  background: rgba(45, 18, 13, 0.04);
+  border-color: rgba(45, 18, 13, 0.2);
+  color: var(--coffee);
+}
+.onLight .input::placeholder {
+  color: rgba(45, 18, 13, 0.4);
+}
+.onLight .input:focus {
+  border-color: var(--rosewood);
+}
+.onLight .button {
+  background: var(--rosewood);
+  color: var(--lemon);
+}
+.onLight .button:hover:not(:disabled) {
+  background: var(--rosewood-dark);
+}
+.onLight .message {
+  color: var(--coffee);
+  opacity: 0.6;
+}

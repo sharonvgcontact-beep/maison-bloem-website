@@ -1,0 +1,48 @@
+.wrap {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: clamp(4rem, 9vw, 6.5rem) clamp(1.25rem, 4vw, 2.5rem);
+}
+
+.mark {
+  font-family: var(--font-heading);
+  font-size: 4.5rem;
+  color: var(--rosewood);
+  opacity: 0.2;
+  line-height: 0.5;
+  display: block;
+  margin-bottom: 1.4rem;
+}
+
+.dark .mark {
+  color: var(--lemon);
+}
+
+.text {
+  font-family: var(--font-heading);
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-style: italic;
+  line-height: 1.5;
+  margin-bottom: 1.4rem;
+  color: var(--coffee);
+}
+
+.dark .text {
+  color: var(--lemon);
+}
+
+.attribution {
+  font-family: var(--font-sub);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--rosewood);
+  opacity: 0.6;
+}
+
+.dark .attribution {
+  color: var(--lemon);
+  opacity: 0.55;
+}

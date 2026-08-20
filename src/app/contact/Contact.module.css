@@ -1,0 +1,61 @@
+.body {
+  background: var(--lemon);
+  padding: var(--space-section) var(--space-section-x);
+}
+.inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2.5rem, 6vw, 5.5rem);
+}
+
+.formTitle {
+  font-family: var(--font-heading);
+  font-size: 1.7rem;
+  font-style: italic;
+  color: var(--coffee);
+  margin-bottom: 0.4rem;
+}
+.formSub {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 300;
+  color: var(--coffee);
+  opacity: 0.6;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+  padding-top: 0.5rem;
+}
+.infoItem h4 {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-style: italic;
+  color: var(--coffee);
+  margin-bottom: 0.5rem;
+}
+.infoItem p {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: var(--coffee);
+  opacity: 0.65;
+  line-height: 1.75;
+}
+.infoItem a {
+  color: var(--rosewood);
+  text-decoration: none;
+  font-weight: 400;
+}
+
+@media (max-width: 860px) {
+  .inner {
+    grid-template-columns: 1fr;
+  }
+}

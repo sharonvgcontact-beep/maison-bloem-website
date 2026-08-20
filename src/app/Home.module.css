@@ -1,0 +1,261 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 560px;
+  overflow: hidden;
+}
+
+.heroImageWrap {
+  position: absolute;
+  inset: 0;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(20, 4, 6, 0.85) 0%,
+    rgba(20, 4, 6, 0.25) 45%,
+    rgba(20, 4, 6, 0.15) 100%
+  );
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 clamp(1.25rem, 4vw, 3.25rem) clamp(3rem, 7vw, 5rem);
+  max-width: 900px;
+}
+
+.heroTitle {
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--lemon);
+  font-size: var(--text-display);
+  line-height: 0.98;
+  margin: 1.1rem 0 1.4rem;
+}
+
+.heroSub {
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: 1rem;
+  color: var(--lemon);
+  opacity: 0.75;
+  max-width: 460px;
+  line-height: 1.7;
+  margin-bottom: 2.25rem;
+}
+
+.heroCtas {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Generic section wrapper, colored via inline style referencing tokens */
+.section {
+  padding: var(--space-section) var(--space-section-x);
+}
+.sectionInner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.bgLemon {
+  background: var(--lemon);
+}
+.bgRosewood {
+  background: var(--rosewood);
+}
+.bgCoffee {
+  background: var(--coffee);
+}
+.bgBotticelli {
+  background: var(--botticelli);
+}
+
+/* Story teaser */
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2.5rem, 6vw, 5.5rem);
+  align-items: center;
+}
+
+.storyImage {
+  aspect-ratio: 4/5;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.storyTitle {
+  font-family: var(--font-heading);
+  font-size: var(--text-h2);
+  font-weight: 400;
+  line-height: 1.05;
+  color: var(--coffee);
+  margin-bottom: 1.5rem;
+}
+.storyTitle em {
+  font-style: italic;
+  color: var(--rosewood);
+}
+
+.storyBody {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 300;
+  line-height: 1.9;
+  color: var(--coffee);
+  opacity: 0.75;
+  margin-bottom: 2rem;
+  max-width: 460px;
+}
+
+/* Pillars section header */
+.sectionHeader {
+  margin-bottom: clamp(2.5rem, 6vw, 4rem);
+  max-width: 640px;
+}
+.sectionTitle {
+  font-family: var(--font-heading);
+  font-size: var(--text-h2);
+  font-weight: 400;
+  line-height: 1.05;
+  color: var(--coffee);
+}
+.sectionTitle.onDark {
+  color: var(--lemon);
+}
+.sectionTitle em {
+  font-style: italic;
+  color: var(--rosewood);
+}
+.sectionTitle.onDark em {
+  color: var(--lemon);
+}
+
+/* Featured grid */
+.featuredGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+.featuredCard {
+  background: var(--white);
+  border: 1px solid rgba(45, 18, 13, 0.08);
+  overflow: hidden;
+}
+.featuredImage {
+  aspect-ratio: 16/10;
+}
+.featuredBody {
+  padding: 1.6rem 1.6rem 1.9rem;
+}
+.featuredTag {
+  font-family: var(--font-sub);
+  font-size: 0.58rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--rosewood);
+  opacity: 0.75;
+  display: block;
+  margin-bottom: 0.6rem;
+}
+.featuredTitle {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-style: italic;
+  color: var(--coffee);
+  margin-bottom: 0.55rem;
+}
+.featuredDesc {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: var(--coffee);
+  opacity: 0.6;
+  line-height: 1.7;
+}
+
+/* Visit split */
+.visitImage {
+  min-height: 480px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+.visitTitle {
+  font-family: var(--font-heading);
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 400;
+  color: var(--coffee);
+  line-height: 0.95;
+  margin-bottom: 1.25rem;
+}
+.visitBody {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: var(--coffee);
+  opacity: 0.7;
+  line-height: 1.85;
+  max-width: 400px;
+  margin-bottom: 2rem;
+}
+
+/* Instagram strip */
+.igGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2px;
+}
+.igTile {
+  aspect-ratio: 1;
+}
+
+/* Newsletter */
+.newsletterSplit {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2.5rem, 6vw, 5rem);
+  align-items: center;
+}
+.newsletterTitle {
+  font-family: var(--font-heading);
+  font-size: var(--text-h2);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--lemon);
+  line-height: 1.05;
+  margin-bottom: 1rem;
+}
+.newsletterBody {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: var(--lemon);
+  opacity: 0.55;
+  line-height: 1.8;
+}
+
+@media (max-width: 900px) {
+  .split,
+  .newsletterSplit {
+    grid-template-columns: 1fr;
+  }
+  .featuredGrid {
+    grid-template-columns: 1fr;
+  }
+  .igGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
