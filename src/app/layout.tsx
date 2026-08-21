@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Fraunces, Barlow, Inter } from "next/font/google";
 import "./globals.css";
+import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
+import CustomCursor from "@/components/CustomCursor";
 import { brand } from "@/content/brand";
 
 // Note: these expose raw --font-fraunces-raw/etc variables (not --font-heading
@@ -53,7 +56,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${fraunces.variable} ${barlow.variable} ${inter.variable}`}>
-      <body>{children}</body>
+      <body>
+        <Nav />
+        <main>{children}</main>
+        <Footer />
+        <CustomCursor />
+      </body>
     </html>
   );
 }
