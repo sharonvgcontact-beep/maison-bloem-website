@@ -1,0 +1,47 @@
+.wrap {
+  overflow: hidden;
+  padding: clamp(1.25rem, 3vw, 2rem) 0;
+}
+
+.track {
+  display: flex;
+  width: max-content;
+  animation: marquee 32s linear infinite;
+}
+
+.group {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.item {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: clamp(1.6rem, 4vw, 3rem);
+  font-weight: 500;
+  color: var(--rosewood);
+  opacity: 0.22;
+  white-space: nowrap;
+  padding-right: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.item::after {
+  content: "·";
+  margin-left: clamp(1.5rem, 3vw, 2.5rem);
+  opacity: 0.7;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .track {
+    animation: none;
+  }
+}

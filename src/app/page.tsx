@@ -8,6 +8,7 @@ import QuoteBlock from "@/components/QuoteBlock";
 import NewsletterForm from "@/components/NewsletterForm";
 import FadeInSection from "@/components/FadeInSection";
 import BrandDivider from "@/components/BrandDivider";
+import MarqueeStrip from "@/components/MarqueeStrip";
 import Logo from "@/components/Logo";
 import { homeContent } from "@/content/home";
 import { brand, navLinks } from "@/content/brand";
@@ -115,6 +116,8 @@ export default function HomePage() {
           <QuoteBlock lines={pullQuote.text} attribution={pullQuote.attribution} />
         </FadeInSection>
       </section>
+
+      <MarqueeStrip />
 
       {/* VISIT / LOCATION TEASER */}
       <section className={`${styles.section} ${styles.bgLemon}`} style={{ paddingTop: 0 }}>
