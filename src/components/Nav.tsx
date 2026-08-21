@@ -2,19 +2,43 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./Nav.module.css";
-import { brand, navLinks } from "@/content/brand";
+import Logo from "./Logo";
+import { navLinks } from "@/content/brand";
 
 export default function Nav() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const isHome = pathname === "/";
+  // On the homepage the fixed bar starts hidden — the hero has its own
+  // lemon-bar nav baked in — and slides in once the hero's been scrolled
+  // past. Every other page keeps the fixed bar visible from the start.
+  const [fixedNavVisible, setFixedNavVisible] = useState(!isHome);
+
+  useEffect(() => {
+    // Reacting to route changes (isHome) and scroll position — both external
+    // to React — so syncing state here is the correct pattern, not an
+    // avoidable render.
+    if (!isHome) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setFixedNavVisible(true);
+      return;
+    }
+    setFixedNavVisible(false);
+    function handleScroll() {
+      setFixedNavVisible(window.scrollY > window.innerHeight * 0.7);
+    }
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [isHome]);
 
   return (
     <>
-      <header className={styles.nav}>
+      <header className={`${styles.nav} ${!fixedNavVisible ? styles.navHidden : ""}`}>
         <Link href="/" className={styles.logo} onClick={() => setOpen(false)}>
-          {brand.name}
+          <Logo variant="lemon" width={140} priority />
         </Link>
 
         <nav aria-label="Primary">

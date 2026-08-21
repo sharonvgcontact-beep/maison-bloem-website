@@ -7,8 +7,10 @@ import PillarsRow from "@/components/PillarsRow";
 import QuoteBlock from "@/components/QuoteBlock";
 import NewsletterForm from "@/components/NewsletterForm";
 import FadeInSection from "@/components/FadeInSection";
+import BrandDivider from "@/components/BrandDivider";
+import Logo from "@/components/Logo";
 import { homeContent } from "@/content/home";
-import { brand } from "@/content/brand";
+import { brand, navLinks } from "@/content/brand";
 
 export default function HomePage() {
   const { hero, storyTeaser, pillars, featured, pullQuote, visit, instagram, newsletter } = homeContent;
@@ -16,22 +18,34 @@ export default function HomePage() {
   return (
     <>
       {/* HERO */}
+      <div className={styles.heroTopBar}>
+        <Logo variant="rosewood" className={styles.heroWordmark} priority />
+        <nav className={styles.heroTopNav} aria-label="Primary">
+          {navLinks
+            .filter((l) => l.label !== "Home")
+            .map((l) => (
+              <Link key={l.href} href={l.href}>
+                {l.label}
+              </Link>
+            ))}
+        </nav>
+      </div>
+
       <section className={styles.hero}>
         <div className={styles.heroImageWrap}>
           <ImageSlot name={hero.imageSlot} alt="Fresh Belgian waffle at Maison Bloem" variant="warm" priority />
         </div>
         <div className={styles.heroOverlay} />
+        <div className={styles.heroDecoLines} aria-hidden="true">
+          <div className={styles.heroDecoLine} />
+          <div className={styles.heroDecoLine} />
+        </div>
         <div className={styles.heroContent}>
           <SectionLabel color="lemon">{hero.eyebrow}</SectionLabel>
           <h1 className={styles.heroTitle}>{hero.subtitle}</h1>
-          <div className={styles.heroCtas}>
-            <Button href="/contact" variant="solidLemon">
-              {hero.cta}
-            </Button>
-            <Button href="/menu" variant="outlineLemon">
-              {hero.secondaryCta}
-            </Button>
-          </div>
+          <Button href="/contact" variant="solidLemon">
+            {hero.cta}
+          </Button>
         </div>
       </section>
 
@@ -48,7 +62,7 @@ export default function HomePage() {
                 {storyTeaser.title} <em>{storyTeaser.titleEm}</em>
               </h2>
               <p className={styles.storyBody}>{storyTeaser.body}</p>
-              <Button href="/our-story" variant="outlineDark">
+              <Button href="/our-story" variant="textLinkDark">
                 {storyTeaser.cta}
               </Button>
             </div>
@@ -64,6 +78,8 @@ export default function HomePage() {
           </div>
         </FadeInSection>
       </section>
+
+      <BrandDivider bg="var(--rosewood)" color="var(--lemon)" />
 
       {/* FEATURED MENU */}
       <section className={`${styles.section} ${styles.bgRosewood}`}>
@@ -111,7 +127,7 @@ export default function HomePage() {
               <SectionLabel>{visit.label}</SectionLabel>
               <h2 className={styles.visitTitle}>{visit.title}</h2>
               <p className={styles.visitBody}>{visit.body}</p>
-              <Button href="/locations" variant="outlineDark">
+              <Button href="/locations" variant="textLinkDark">
                 {visit.cta}
               </Button>
             </div>

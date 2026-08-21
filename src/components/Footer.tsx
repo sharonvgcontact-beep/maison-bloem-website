@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "./Footer.module.css";
+import Logo from "./Logo";
 import { brand, footerColumns } from "@/content/brand";
 
 export default function Footer() {
@@ -10,7 +11,7 @@ export default function Footer() {
       <div className={styles.statement}>
         <div>
           <Link href="/" className={styles.wordmark}>
-            {brand.name}
+            <Logo variant="lemon" width={220} />
           </Link>
           <p className={styles.tagline}>{brand.shortTagline}</p>
         </div>

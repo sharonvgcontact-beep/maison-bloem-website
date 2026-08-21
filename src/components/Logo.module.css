@@ -1,0 +1,9 @@
+.logo {
+  position: relative;
+  aspect-ratio: 1000 / 153;
+  display: inline-block;
+}
+
+.img {
+  object-fit: contain;
+}

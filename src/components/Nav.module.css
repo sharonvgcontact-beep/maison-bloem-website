@@ -12,15 +12,17 @@
   background: rgba(107, 11, 12, 0.97);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 248, 202, 0.12);
+  transform: translateY(0);
+  transition: transform 0.35s var(--ease);
+}
+
+.navHidden {
+  transform: translateY(-100%);
 }
 
 .logo {
-  font-family: var(--font-heading);
-  font-size: 1.3rem;
-  font-style: italic;
-  color: var(--lemon);
-  text-decoration: none;
-  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
 }
 
 .links {

@@ -1,0 +1,18 @@
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 22px 0;
+}
+
+.square {
+  width: 7px;
+  height: 7px;
+  border: 1.4px solid currentColor;
+  opacity: 0.55;
+}
+
+.square:nth-child(4) {
+  opacity: 1;
+}

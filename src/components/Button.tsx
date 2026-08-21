@@ -2,7 +2,7 @@ import type { ButtonHTMLAttributes, AnchorHTMLAttributes } from "react";
 import Link from "next/link";
 import styles from "./Button.module.css";
 
-type Variant = "solidLemon" | "solidRosewood" | "outlineLemon" | "outlineDark";
+type Variant = "solidLemon" | "solidRosewood" | "outlineLemon" | "outlineDark" | "textLinkDark" | "textLinkLemon";
 
 type CommonProps = {
   variant?: Variant;

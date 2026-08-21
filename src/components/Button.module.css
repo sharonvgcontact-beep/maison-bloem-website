@@ -58,3 +58,45 @@
   color: var(--lemon);
   border-color: var(--rosewood);
 }
+
+/* Editorial text-link style for secondary actions — reserves the solid
+   pill for the one primary action per section instead of every button
+   looking the same. */
+.textLinkDark,
+.textLinkLemon {
+  display: inline-flex;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background: none;
+  position: relative;
+}
+.textLinkDark {
+  color: var(--coffee);
+}
+.textLinkLemon {
+  color: var(--lemon);
+}
+.textLinkDark:hover,
+.textLinkLemon:hover {
+  transform: none;
+}
+.textLinkDark::after,
+.textLinkLemon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.5;
+  transform: scaleX(0.3);
+  transform-origin: left;
+  transition: transform 0.3s var(--ease), opacity 0.3s var(--ease);
+}
+.textLinkDark:hover::after,
+.textLinkLemon:hover::after {
+  transform: scaleX(1);
+  opacity: 1;
+}

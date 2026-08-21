@@ -14,14 +14,8 @@
 }
 
 .wordmark {
-  font-family: var(--font-heading);
-  font-size: clamp(2.6rem, 6vw, 4.5rem);
-  font-style: italic;
-  color: var(--lemon);
-  line-height: 0.95;
   display: block;
   margin-bottom: 1rem;
-  text-decoration: none;
 }
 
 .tagline {

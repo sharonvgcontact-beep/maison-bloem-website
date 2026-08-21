@@ -7,6 +7,7 @@ import QuoteBlock from "@/components/QuoteBlock";
 import PillarsRow from "@/components/PillarsRow";
 import Button from "@/components/Button";
 import FadeInSection from "@/components/FadeInSection";
+import BrandDivider from "@/components/BrandDivider";
 import { storyContent as s } from "@/content/story";
 
 export const metadata: Metadata = {
@@ -29,6 +30,8 @@ export default function OurStoryPage() {
           </>
         }
       />
+
+      <BrandDivider bg="var(--lemon)" color="var(--rosewood)" />
 
       {/* WHO WE ARE */}
       <section id="who" className={`${styles.section} ${styles.bgLemon}`}>
@@ -236,10 +239,10 @@ export default function OurStoryPage() {
               <Button href="/menu" variant="solidRosewood">
                 Discover the Menu
               </Button>
-              <Button href="/locations" variant="outlineDark">
+              <Button href="/locations" variant="textLinkDark">
                 Our Locations
               </Button>
-              <Button href="/contact" variant="outlineDark">
+              <Button href="/contact" variant="textLinkDark">
                 Visit Us
               </Button>
             </div>

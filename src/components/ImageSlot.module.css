@@ -12,28 +12,51 @@
   object-fit: cover;
 }
 
+/* Diagonal duotone split, in place of a generic soft gradient blob — each
+   placeholder reads as a deliberate graphic panel rather than filler. */
 .warm {
-  background: radial-gradient(ellipse 65% 75% at 55% 55%, #d4820a 0%, #8b3a08 32%, #4a1a06 62%, #1a0304 100%);
+  background: linear-gradient(128deg, var(--rosewood) 0%, var(--rosewood) 46%, var(--coffee) 54%, var(--coffee) 100%);
 }
 .cool {
-  background: linear-gradient(160deg, var(--botticelli) 0%, var(--botticelli-dark) 100%);
+  background: linear-gradient(
+    128deg,
+    var(--botticelli) 0%,
+    var(--botticelli) 46%,
+    var(--botticelli-dark) 54%,
+    var(--botticelli-dark) 100%
+  );
 }
 .dark {
-  background: linear-gradient(160deg, var(--coffee-mid) 0%, var(--coffee) 100%);
+  background: linear-gradient(128deg, var(--coffee) 0%, var(--coffee) 46%, var(--rosewood-dark) 54%, var(--rosewood-dark) 100%);
 }
 .light {
-  background: linear-gradient(160deg, var(--lemon) 0%, var(--lemon-dark) 100%);
+  background: linear-gradient(128deg, var(--lemon) 0%, var(--lemon) 46%, var(--botticelli) 54%, var(--botticelli) 100%);
 }
 
-.icon {
-  opacity: 0.28;
-  width: 30%;
+/* The house-and-waffle mark as a large, bled, rotated watermark — the same
+   device as the cursor, so it reads as brand rather than stock filler. */
+.mark {
+  position: absolute;
+  width: 68%;
   height: auto;
+  bottom: -12%;
+  right: -10%;
+  transform: rotate(-9deg);
+  opacity: 0.16;
+}
+
+.warm .mark,
+.dark .mark {
+  stroke: var(--lemon);
+}
+.cool .mark,
+.light .mark {
+  stroke: var(--coffee);
 }
 
 .caption {
   position: absolute;
-  bottom: 14px;
+  top: 14px;
   left: 14px;
   font-family: var(--font-sub);
   font-size: 0.6rem;
