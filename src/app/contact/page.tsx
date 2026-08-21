@@ -3,6 +3,7 @@ import styles from "./Contact.module.css";
 import PageHero from "@/components/PageHero";
 import ContactForm from "@/components/ContactForm";
 import FadeInSection from "@/components/FadeInSection";
+import Stamp from "@/components/Stamp";
 import { brand } from "@/content/brand";
 
 export const metadata: Metadata = {
@@ -25,6 +26,10 @@ export default function ContactPage() {
         subtitle="We'd love to hear from you — whether you have a question, a collaboration idea, or simply want to say hello."
         bg="rosewood"
       />
+
+      <div className={styles.stampSeam}>
+        <Stamp variant="rosewood" className={styles.stamp} />
+      </div>
 
       <section className={styles.body}>
         <FadeInSection>

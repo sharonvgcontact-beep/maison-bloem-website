@@ -1,19 +1,20 @@
+import Logo from "./Logo";
 import styles from "./MarqueeStrip.module.css";
 
 type Props = {
-  text?: string;
   repeat?: number;
   bg?: string;
-  color?: string;
+  logoVariant?: "rosewood" | "lemon";
 };
 
 // A slow, seamless-looping ticker used as a quiet section separator —
 // duplicated content + a translateX(-50%) loop is the standard trick for
-// an infinite marquee with no visible seam.
-export default function MarqueeStrip({ text = "Maison Bloem", repeat = 8, bg = "var(--lemon)", color }: Props) {
+// an infinite marquee with no visible seam. Repeats the real wordmark logo
+// (same asset as the nav/footer) rather than styled text.
+export default function MarqueeStrip({ repeat = 8, bg = "var(--lemon)", logoVariant = "rosewood" }: Props) {
   const items = Array.from({ length: repeat }).map((_, i) => (
-    <span className={styles.item} key={i} style={color ? { color } : undefined}>
-      {text}
+    <span className={styles.item} key={i}>
+      <Logo variant={logoVariant} className={styles.logo} />
     </span>
   ));
 
