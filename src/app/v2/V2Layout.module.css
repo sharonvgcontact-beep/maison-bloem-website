@@ -1,0 +1,32 @@
+/* Local design tokens for the v2 variant, layered on top of the brand's
+   own palette (tokens.css) rather than replacing it. Swaps the display
+   serif from the sitewide Fraunces placeholder to Playfair Display and
+   the body sans from Inter to Outfit, and adds a real light/dark theme
+   built from Maison Bloem's existing rosewood/lemon/coffee colors. */
+.root {
+  --font-heading: var(--font-playfair-raw), Georgia, "Times New Roman", serif;
+  --font-body: var(--font-outfit-raw), sans-serif;
+
+  --surface: var(--white);
+  --surface-alt: var(--lemon);
+  --ink: var(--coffee);
+  --accent: var(--rosewood);
+  --line: rgba(45, 18, 13, 0.14);
+  --btn-bg: var(--rosewood);
+  --btn-text: var(--white);
+
+  background: var(--surface);
+  color: var(--ink);
+}
+
+@media (prefers-color-scheme: dark) {
+  .root {
+    --surface: var(--coffee);
+    --surface-alt: var(--coffee-mid);
+    --ink: var(--lemon);
+    --accent: var(--lemon);
+    --line: rgba(255, 248, 202, 0.16);
+    --btn-bg: var(--lemon);
+    --btn-text: var(--coffee);
+  }
+}

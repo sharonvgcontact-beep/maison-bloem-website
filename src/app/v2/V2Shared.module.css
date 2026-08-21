@@ -1,0 +1,389 @@
+/* ── Shared building blocks for the v2 subpages. Kept generic (grid
+   scaffolds, prose, quote, bento, overlay, cta-band, form controls) so
+   each page composes them into a distinct sequence rather than every
+   page reinventing the same primitives. ── */
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding-left: var(--space-section-x);
+  padding-right: var(--space-section-x);
+}
+
+.section {
+  padding: var(--space-section) 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.sectionLabel {
+  font-family: var(--font-sub);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 1.25rem;
+}
+
+.textLink {
+  font-family: var(--font-sub);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 3px;
+  opacity: 0.75;
+  transition: opacity 0.2s;
+}
+.textLink:hover {
+  opacity: 1;
+}
+
+.btnPrimary {
+  font-family: var(--font-sub);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--btn-text);
+  background: var(--btn-bg);
+  padding: 1rem 2rem;
+  text-decoration: none;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+/* Split: image + prose, ONE use per page */
+.splitGrid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: clamp(2.5rem, 6vw, 5rem);
+  align-items: center;
+}
+.splitImage {
+  position: relative;
+  aspect-ratio: 4/5;
+}
+.splitTitle {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.08;
+  margin-bottom: 1.5rem;
+}
+.splitTitle em {
+  font-style: italic;
+  color: var(--accent);
+}
+.prose {
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: 0.98rem;
+  line-height: 1.9;
+  opacity: 0.72;
+  max-width: 480px;
+  margin-bottom: 1rem;
+}
+.proseStrong {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: var(--accent);
+  line-height: 1.4;
+  margin: 0.5rem 0 1.4rem;
+}
+.proseInset {
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  border-left: 2px solid var(--accent);
+  padding-left: 1.4rem;
+  margin: 1.6rem 0;
+}
+
+/* Full-width quote, no image */
+.manifesto {
+  padding: var(--space-section) 0;
+  border-bottom: 1px solid var(--line);
+  text-align: center;
+}
+.manifestoRule {
+  width: 48px;
+  height: 1px;
+  background: var(--accent);
+  margin: 0 auto 2.5rem;
+}
+.manifestoText {
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(1.5rem, 3.2vw, 2.3rem);
+  line-height: 1.4;
+  max-width: 760px;
+  margin: 0 auto 1.75rem;
+}
+.manifestoAttribution {
+  font-family: var(--font-sub);
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  opacity: 0.45;
+}
+
+/* Full-bleed image with an overlaid text card */
+.overlayBanner {
+  position: relative;
+  min-height: 560px;
+}
+.overlayImageWrap {
+  position: absolute;
+  inset: 0;
+}
+.overlayScrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(20, 4, 6, 0.82) 0%, rgba(20, 4, 6, 0.1) 55%);
+}
+.overlayCard {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  padding: clamp(2rem, 5vw, 4rem);
+}
+.overlayCardInner {
+  max-width: 480px;
+}
+.overlayTitle {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: clamp(2.2rem, 4.6vw, 3.4rem);
+  line-height: 1;
+  color: var(--lemon);
+  margin-bottom: 1.1rem;
+}
+.overlayProse {
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--lemon);
+  opacity: 0.85;
+}
+.overlayStrong {
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--lemon);
+  margin: 0.75rem 0;
+}
+
+/* Bento: one large cell + N small, tinted with brand colors */
+.bentoGrid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 2px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+.bentoSmallWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.bentoCell {
+  background: var(--surface);
+  padding: clamp(1.75rem, 3.5vw, 2.5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex: 1;
+  min-height: 200px;
+}
+.bentoLarge .bentoCell {
+  min-height: 440px;
+}
+.bentoTint1 {
+  background: color-mix(in srgb, var(--surface-alt) 55%, var(--surface));
+}
+.bentoTint2 {
+  background: color-mix(in srgb, var(--accent) 8%, var(--surface));
+}
+.bentoNum {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  color: var(--accent);
+  opacity: 0.7;
+  margin-bottom: 0.75rem;
+}
+.bentoTitle {
+  font-family: var(--font-heading);
+  font-size: clamp(1.2rem, 2.2vw, 1.7rem);
+  font-weight: 500;
+  margin-bottom: 0.55rem;
+}
+.bentoBody {
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: 0.9rem;
+  line-height: 1.75;
+  opacity: 0.68;
+  max-width: 420px;
+}
+
+/* Horizontal scroll-snap strip */
+.scrollStrip {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 0.5rem;
+  margin: 0 calc(-1 * var(--space-section-x));
+  padding-left: var(--space-section-x);
+  padding-right: var(--space-section-x);
+}
+.scrollCard {
+  scroll-snap-align: start;
+  flex: 0 0 clamp(220px, 26vw, 280px);
+}
+.scrollImage {
+  position: relative;
+  aspect-ratio: 1;
+  margin-bottom: 1rem;
+}
+.scrollName {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+}
+.scrollDesc {
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: 0.82rem;
+  line-height: 1.65;
+  opacity: 0.62;
+}
+
+/* One deliberate bold color band per page */
+.ctaBand {
+  background: var(--rosewood);
+  padding: var(--space-section) 0;
+  text-align: center;
+}
+.ctaBandInner {
+  max-width: 640px;
+  margin: 0 auto;
+}
+.ctaBandTitle {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.05;
+  color: var(--lemon);
+  margin-bottom: 1.25rem;
+}
+.ctaBandBody {
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: 0.95rem;
+  line-height: 1.85;
+  color: var(--lemon);
+  opacity: 0.75;
+  margin-bottom: 2rem;
+}
+.ctaBandActions {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.ctaBandPrimary {
+  font-family: var(--font-sub);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--rosewood);
+  background: var(--lemon);
+  padding: 1rem 2rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.ctaBandSecondary {
+  font-family: var(--font-sub);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--lemon);
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 3px;
+  opacity: 0.85;
+}
+
+/* Form controls (contact) */
+.field {
+  margin-bottom: 1.4rem;
+}
+.label {
+  font-family: var(--font-sub);
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink);
+  opacity: 0.6;
+  display: block;
+  margin-bottom: 0.6rem;
+}
+.input,
+.select,
+.textarea {
+  width: 100%;
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  color: var(--ink);
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--line);
+  padding: 0.7rem 0;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.input::placeholder,
+.textarea::placeholder {
+  color: var(--ink);
+  opacity: 0.35;
+}
+.input:focus,
+.select:focus,
+.textarea:focus {
+  border-color: var(--accent);
+}
+.textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+@media (max-width: 900px) {
+  .splitGrid {
+    grid-template-columns: 1fr;
+  }
+  .bentoGrid {
+    grid-template-columns: 1fr;
+  }
+  .bentoLarge .bentoCell {
+    min-height: 280px;
+  }
+}

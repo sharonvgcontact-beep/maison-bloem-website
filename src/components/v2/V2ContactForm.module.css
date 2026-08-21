@@ -1,0 +1,19 @@
+.submit {
+  border: none;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+.submit:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+.message {
+  margin-top: 1rem;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  opacity: 0.75;
+}
+.error {
+  color: var(--rosewood);
+  opacity: 1;
+}

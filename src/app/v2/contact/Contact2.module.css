@@ -1,0 +1,58 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(3rem, 6vw, 5.5rem);
+}
+.formTitle {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 1.6rem;
+  margin-bottom: 0.4rem;
+}
+.formSub {
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: 0.85rem;
+  opacity: 0.6;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+.submit {
+  margin-top: 0.5rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+  padding-top: 0.25rem;
+}
+.infoLabel {
+  font-family: var(--font-sub);
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 0.6rem;
+}
+.infoBody {
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: 0.92rem;
+  line-height: 1.75;
+  opacity: 0.72;
+}
+.infoBody a {
+  color: var(--ink);
+  opacity: 1;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 860px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
