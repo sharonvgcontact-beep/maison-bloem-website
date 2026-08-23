@@ -75,7 +75,7 @@ export const menuCategories: MenuCategory[] = [
         price: "£4.5 / scoop",
       },
       {
-        name: "Speculoos Crumble",
+        name: "Speculoos",
         description: "Cookie butter ice cream, biscuit pieces folded through.",
         price: "£5 / scoop",
       },
