@@ -42,18 +42,21 @@ export const homeContent = {
       title: "Bloem Experience",
       desc: "Callebaut 70% ganache, cuberdon candy, gold leaf, crushed speculoos.",
       imageSlot: "menu-signature-bloem.jpg",
+      href: "/menu#signature",
     },
     {
       tag: "Seasonal",
       title: "Christmas Bloem",
       desc: "Speculoos cookie butter, cinnamon cream, biscuit crumble.",
       imageSlot: "menu-seasonal-speculoos.jpg",
+      href: "/menu#seasonal",
     },
     {
       tag: "Drinks",
       title: "ChocoBloem",
       desc: "Hot Belgian chocolate.",
       imageSlot: "menu-drinks-chocobloem.jpg",
+      href: "/menu#drinks",
     },
   ],
 

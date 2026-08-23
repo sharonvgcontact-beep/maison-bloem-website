@@ -206,6 +206,14 @@
   background: var(--white);
   border: 1px solid rgba(45, 18, 13, 0.08);
   overflow: hidden;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.2s var(--ease), transform 0.2s var(--ease);
+}
+.featuredCard:hover {
+  border-color: var(--rosewood);
+  transform: translateY(-3px);
 }
 .featuredImage {
   aspect-ratio: 16/10;

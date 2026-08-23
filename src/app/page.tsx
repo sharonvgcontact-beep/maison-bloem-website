@@ -94,7 +94,7 @@ export default function HomePage() {
             </div>
             <div className={styles.featuredGrid}>
               {featured.map((f) => (
-                <div className={styles.featuredCard} key={f.title}>
+                <Link href={f.href} className={styles.featuredCard} key={f.title}>
                   <div className={styles.featuredImage}>
                     <ImageSlot name={f.imageSlot} alt={f.title} variant="warm" />
                   </div>
@@ -103,7 +103,7 @@ export default function HomePage() {
                     <h3 className={styles.featuredTitle}>{f.title}</h3>
                     <p className={styles.featuredDesc}>{f.desc}</p>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
           </div>
