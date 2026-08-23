@@ -20,70 +20,41 @@ export const menuCategories: MenuCategory[] = [
   {
     id: "classic",
     label: "Classic",
-    title: "Classic",
+    title: "Bloem Simple",
     description:
       "The Brussels waffle as it was always meant to be — crisp at the edge, airy within, pearl sugar caramelised into every square.",
     items: [
       {
-        name: "The Original",
-        description: "Our base Brussels waffle, Belgian cassonade pearl sugar, dusted with icing sugar.",
+        name: "Bloem Simple",
+        description: "Golden Brussels waffle, light and crisp outside, soft at the centre.",
         price: "£8",
-      },
-      {
-        name: "Butter & Sugar",
-        description: "Warm waffle, Normandy butter, cassonade sugar. Simple, and exactly right.",
-        price: "£7",
-      },
-      {
-        name: "Maple & Cream",
-        description: "Whipped cream, Canadian maple syrup, toasted pecan.",
-        price: "£9.5",
       },
     ],
   },
   {
     id: "signature",
     label: "Signature",
-    title: "Signature Creations",
+    title: "Bloem Experience",
     description:
       "Our house creations — where the waffle becomes a canvas. Designed to be savoured with the eyes as much as the palate.",
     items: [
       {
-        name: "The Bloem",
-        description: "Callebaut 70% ganache, cuberdon candy, gold leaf, crushed speculoos.",
-        price: "£13",
-        tag: "Signature",
-      },
-      {
-        name: "Brussels Rose",
-        description: "Rosewood berry compote, mascarpone cream, freeze-dried raspberry.",
-        price: "£12",
-        tag: "Signature",
-      },
-      {
-        name: "Café Bruxellois",
-        description: "Espresso mascarpone, cocoa nib, coffee caramel drizzle.",
-        price: "£12",
+        name: "Bloem Experience",
+        description: "Golden Brussels waffle with a rose-shaped scoop, strawberry, whipped cream, and chocolate sauce.",
+        price: "£14",
       },
     ],
   },
   {
     id: "seasonal",
     label: "Seasonal",
-    title: "Seasonal Specials",
+    title: "Bloem Season",
     description: "Short runs, tied to the season. Ask your server what's on right now — it won't stay long.",
     items: [
       {
-        name: "Winter Speculoos",
-        description: "Speculoos cookie butter, cinnamon cream, biscuit crumble.",
-        price: "£12.5",
-        tag: "Limited",
-      },
-      {
-        name: "Summer Berry",
-        description: "Fresh seasonal berries, lemon curd, torn mint.",
-        price: "£12.5",
-        tag: "Limited",
+        name: "Bloem Season",
+        description: "Our signature seasonal creation, dressed with curated toppings.",
+        price: "£12",
       },
     ],
   },
