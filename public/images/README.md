@@ -9,9 +9,9 @@ placeholder to the real photo — no code changes needed.
 |---|---|---|
 | `hero-waffle.jpg` | Home, hero | Full-bleed, moody shot of a waffle fresh off the iron |
 | `grandmother-kitchen.jpg` | Home, story teaser | Warm, nostalgic kitchen scene |
-| `menu-signature-bloem.jpg` | Home, featured | "The Bloem" signature waffle |
-| `menu-seasonal-speculoos.jpg` | Home, featured | Seasonal waffle |
-| `menu-icecream-chocolate.jpg` | Home, featured | Belgian chocolate ice cream scoop |
+| `menu-signature-bloem.jpg` | Home, featured | "Bloem Experience" waffle |
+| `menu-seasonal-speculoos.jpg` | Home, featured | "Christmas Bloem" seasonal waffle |
+| `menu-drinks-chocobloem.jpg` | Home, featured | Hot Belgian chocolate drink |
 | `storefront-london.jpg` | Home, visit section | Exterior/interior of the London boutique |
 | `instagram-1.jpg` … `instagram-6.jpg` | Home, Instagram strip | Square social-style shots |
 | `story-brussels-kitchen.jpg` | Our Story, "Who we are" | Brussels kitchen / interior |

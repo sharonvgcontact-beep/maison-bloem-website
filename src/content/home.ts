@@ -39,21 +39,21 @@ export const homeContent = {
   featured: [
     {
       tag: "Signature",
-      title: "The Bloem",
+      title: "Bloem Experience",
       desc: "Callebaut 70% ganache, cuberdon candy, gold leaf, crushed speculoos.",
       imageSlot: "menu-signature-bloem.jpg",
     },
     {
       tag: "Seasonal",
-      title: "Winter Speculoos",
+      title: "Christmas Bloem",
       desc: "Speculoos cookie butter, cinnamon cream, biscuit crumble.",
       imageSlot: "menu-seasonal-speculoos.jpg",
     },
     {
-      tag: "Ice Cream",
-      title: "Belgian Chocolate",
-      desc: "Callebaut 70% dark chocolate, churned slow, small-batch.",
-      imageSlot: "menu-icecream-chocolate.jpg",
+      tag: "Drinks",
+      title: "Drink ChocoBloem",
+      desc: "Hot Belgian chocolate.",
+      imageSlot: "menu-drinks-chocobloem.jpg",
     },
   ],
 
