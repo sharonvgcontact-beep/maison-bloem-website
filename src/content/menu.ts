@@ -140,8 +140,8 @@ export const menuCategories: MenuCategory[] = [
         price: "£1.5",
       },
       {
-        name: "Cuberdon",
-        description: "The raspberry candy of Ghent.",
+        name: "Cuberdon Sauce",
+        description: "Raspberry syrup, inspired by the candy of Ghent.",
         price: "£2",
       },
     ],
