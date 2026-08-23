@@ -76,7 +76,7 @@ export const homeContent = {
 
   instagram: {
     label: "Follow along",
-    title: "@maison_bloem",
+    title: "@maisonbloemldn",
     imageSlots: [
       "instagram-1.jpg",
       "instagram-2.jpg",

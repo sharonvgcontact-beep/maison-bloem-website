@@ -9,7 +9,7 @@ import { locations } from "@/content/locations";
 
 export const metadata: Metadata = {
   title: "Locations",
-  description: "Find Maison Bloem — opening in London in 2026, with New York and Los Angeles to follow.",
+  description: "Find Maison Bloem — opening in London in 2026.",
 };
 
 export default function LocationsPage() {

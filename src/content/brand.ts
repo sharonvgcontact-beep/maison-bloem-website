@@ -19,7 +19,7 @@ export const brand = {
   },
 
   social: {
-    instagram: { handle: "@maison_bloem", url: "https://instagram.com/maison_bloem" },
+    instagram: { handle: "@maisonbloemldn", url: "https://instagram.com/maisonbloemldn" },
     tiktok: { handle: "@maisonbloem", url: "https://tiktok.com/@maisonbloem" },
     pinterest: { handle: "@maisonbloem", url: "https://pinterest.com/maisonbloem" },
   },
@@ -57,8 +57,6 @@ export const footerColumns = [
     links: [
       { label: "Our locations", href: "/locations" },
       { label: "London", href: "/locations" },
-      { label: "Coming to New York", href: "/locations" },
-      { label: "Coming to Los Angeles", href: "/locations" },
     ],
   },
   {
