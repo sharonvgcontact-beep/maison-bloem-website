@@ -92,16 +92,6 @@ export const menuCategories: MenuCategory[] = [
         description: "Callebaut dark chocolate, steamed milk, whipped cream.",
         price: "£5.5",
       },
-      {
-        name: "Speculoos Iced Latte",
-        description: "Cold brew espresso, oat milk, speculoos syrup, biscuit crumble float.",
-        price: "£5.5",
-      },
-      {
-        name: "Still or Sparkling Water",
-        description: "Premium mineral water, served chilled.",
-        price: "£3",
-      },
     ],
   },
   {
@@ -111,16 +101,53 @@ export const menuCategories: MenuCategory[] = [
     description: "Curated pairings for the full Maison Bloem experience.",
     items: [
       {
-        name: "The Bloem Duo",
-        description: "Any classic waffle, one scoop of ice cream, and a hot drink.",
+        name: "Bloem Duo",
+        description: "Any waffle, paired with one scoop of ice cream.",
+        price: "£14",
+      },
+      {
+        name: "Bloem Combo",
+        description: "Any waffle, one scoop of ice cream, and a hot drink.",
         price: "£18",
         tag: "Best Value",
       },
+    ],
+  },
+  {
+    id: "toppings",
+    label: "Toppings",
+    title: "Extra Toppings",
+    description: "Make it yours — add any of these to a waffle, a scoop, or both.",
+    items: [
       {
-        name: "Table for Two",
-        description: "Two signature waffles, two scoops, two drinks. Share something beautiful.",
-        price: "£36",
-        tag: "Share",
+        name: "Fresh Strawberry",
+        description: "Sliced, in season.",
+        price: "£1.5",
+      },
+      {
+        name: "Whipped Cream",
+        description: "Light, lightly sweetened.",
+        price: "£1",
+      },
+      {
+        name: "Chocolate Sauce",
+        description: "Callebaut 70%, warm.",
+        price: "£1.5",
+      },
+      {
+        name: "Speculoos Crumble",
+        description: "Biscuit, crushed to order.",
+        price: "£1.5",
+      },
+      {
+        name: "Cuberdon",
+        description: "The raspberry candy of Ghent.",
+        price: "£2",
+      },
+      {
+        name: "Pearl Sugar",
+        description: "Belgian cassonade, extra crunch.",
+        price: "£1",
       },
     ],
   },
