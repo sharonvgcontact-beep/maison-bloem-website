@@ -57,29 +57,37 @@
 
 .items {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 420px));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 440px));
   justify-content: center;
   gap: 2px;
 }
 
 .item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.1rem;
   background: var(--white);
-  padding: clamp(1.5rem, 3vw, 2.1rem) clamp(1.5rem, 3vw, 2.3rem);
   border: 1px solid rgba(45, 18, 13, 0.08);
-  transition: background 0.2s, border-color 0.2s;
+  padding: clamp(1.1rem, 2.5vw, 1.5rem);
+  transition: border-color 0.2s var(--ease), transform 0.2s var(--ease);
 }
 
 .item:hover {
-  background: var(--rosewood);
   border-color: var(--rosewood);
+  transform: translateY(-2px);
 }
-.item:hover .itemName,
-.item:hover .itemDesc,
-.item:hover .itemPrice {
-  color: var(--lemon);
+
+.itemImage {
+  width: clamp(64px, 14vw, 84px);
+  aspect-ratio: 1 / 1;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 3px;
 }
-.item:hover .itemDesc {
-  opacity: 0.65;
+
+.itemBody {
+  flex: 1;
+  min-width: 0;
 }
 
 .itemTop {

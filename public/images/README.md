@@ -22,6 +22,20 @@ placeholder to the real photo — no code changes needed.
 | `ingredient-callebaut-70.jpg` | Our Story, ingredients | Chocolate |
 | `ingredient-the-cuberdon.jpg` | Our Story, ingredients | Cuberdon candy |
 | `ingredient-pearl-sugar.jpg` | Our Story, ingredients | Pearl sugar |
+| `menu-classic-bloem-simple.jpg` | Menu, Classic tab | Bloem Simple waffle |
+| `menu-signature-bloem-experience.jpg` | Menu, Signature tab | Bloem Experience waffle |
+| `menu-seasonal-bloem-season.jpg` | Menu, Seasonal tab | Bloem Season waffle |
+| `menu-icecream-belgian-chocolate.jpg` | Menu, Ice Cream tab | Belgian chocolate scoop |
+| `menu-icecream-vanilla-bean.jpg` | Menu, Ice Cream tab | Vanilla bean scoop |
+| `menu-icecream-speculoos.jpg` | Menu, Ice Cream tab | Speculoos scoop |
+| `menu-drinks-belgian-hot-chocolate.jpg` | Menu, Drinks tab | Belgian hot chocolate |
+| `menu-combo-bloem-duo.jpg` | Menu, Combos tab | Bloem Duo pairing |
+| `menu-combo-bloem-combo.jpg` | Menu, Combos tab | Bloem Combo pairing |
+| `menu-toppings-fresh-fruits.jpg` | Menu, Toppings tab | Strawberry, blueberry, banana, raspberry |
+| `menu-toppings-whipped-cream.jpg` | Menu, Toppings tab | Whipped cream |
+| `menu-toppings-chocolate-sauce.jpg` | Menu, Toppings tab | Chocolate sauce |
+| `menu-toppings-hazelnuts.jpg` | Menu, Toppings tab | Toasted hazelnuts |
+| `menu-toppings-cuberdon-sauce.jpg` | Menu, Toppings tab | Cuberdon sauce |
 
 Recommended formats: `.jpg`/`.webp`, roughly 1600px on the long edge for hero
 images, 800px for grid tiles. Next.js will optimise and resize automatically.
