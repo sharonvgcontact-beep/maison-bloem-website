@@ -102,12 +102,12 @@ export const menuCategories: MenuCategory[] = [
     items: [
       {
         name: "Bloem Duo",
-        description: "Any waffle, paired with one scoop of ice cream.",
+        description: "Brussels waffle, paired with a Belgian hot chocolate.",
         price: "£14",
       },
       {
         name: "Bloem Combo",
-        description: "Any waffle, one scoop of ice cream, and a hot drink.",
+        description: "Brussels waffle, one rose-shaped scoop, one topping, and a drink.",
         price: "£18",
         tag: "Best Value",
       },
