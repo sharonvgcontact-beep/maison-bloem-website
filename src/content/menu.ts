@@ -120,8 +120,8 @@ export const menuCategories: MenuCategory[] = [
     description: "Make it yours — add any of these to a waffle, a scoop, or both.",
     items: [
       {
-        name: "Fresh Strawberry",
-        description: "Sliced, in season.",
+        name: "Fresh Fruits",
+        description: "Strawberry, blueberry, banana, raspberry.",
         price: "£1.5",
       },
       {
@@ -135,19 +135,14 @@ export const menuCategories: MenuCategory[] = [
         price: "£1.5",
       },
       {
-        name: "Speculoos Crumble",
-        description: "Biscuit, crushed to order.",
+        name: "Hazelnuts",
+        description: "Toasted, roughly chopped.",
         price: "£1.5",
       },
       {
         name: "Cuberdon",
         description: "The raspberry candy of Ghent.",
         price: "£2",
-      },
-      {
-        name: "Pearl Sugar",
-        description: "Belgian cassonade, extra crunch.",
-        price: "£1",
       },
     ],
   },
