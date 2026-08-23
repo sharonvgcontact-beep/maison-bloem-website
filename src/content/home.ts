@@ -51,7 +51,7 @@ export const homeContent = {
     },
     {
       tag: "Drinks",
-      title: "Drink ChocoBloem",
+      title: "ChocoBloem",
       desc: "Hot Belgian chocolate.",
       imageSlot: "menu-drinks-chocobloem.jpg",
     },
