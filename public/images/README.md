@@ -17,11 +17,10 @@ placeholder to the real photo — no code changes needed.
 | `story-brussels-kitchen.jpg` | Our Story, "Who we are" | Brussels kitchen / interior |
 | `story-waffle-iron.jpg` | Our Story, "Our origin" | Close-up of a waffle iron |
 | `story-founder-home.jpg` | Our Story, "A sense of home" | Founder portrait or interior detail |
-| `ingredient-belgian-flour.jpg` | Our Story, ingredients | Flour |
-| `ingredient-normandy-butter.jpg` | Our Story, ingredients | Butter |
-| `ingredient-callebaut-70.jpg` | Our Story, ingredients | Chocolate |
-| `ingredient-the-cuberdon.jpg` | Our Story, ingredients | Cuberdon candy |
-| `ingredient-pearl-sugar.jpg` | Our Story, ingredients | Pearl sugar |
+| `ingredient-flour.jpg` | Our Story, ingredients | Flour |
+| `ingredient-butter.jpg` | Our Story, ingredients | Butter |
+| `ingredient-belgian-chocolate.jpg` | Our Story, ingredients | Chocolate |
+| `ingredient-fresh-fruits.jpg` | Our Story, ingredients | Fruits from local markets |
 | `menu-classic-bloem-simple.jpg` | Menu, Classic tab | Bloem Simple waffle |
 | `menu-signature-bloem-experience.jpg` | Menu, Signature tab | Bloem Experience waffle |
 | `menu-seasonal-bloem-season.jpg` | Menu, Seasonal tab | Bloem Season waffle |

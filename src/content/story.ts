@@ -128,26 +128,25 @@ export const storyContent = {
     ],
   },
 
+  ingredientsIntro:
+    "Everything is handmade, following Belgian know-how — no industrial dough, ever.",
+
   ingredients: [
     {
-      name: "Belgian Flour.",
-      desc: "Premium Belgian flour, fine-milled and consistent. The invisible foundation of every perfect waffle.",
+      name: "Flour.",
+      desc: "Premium flour, fine-milled and consistent. The invisible foundation of every perfect waffle.",
     },
     {
-      name: "Normandy Butter.",
+      name: "Butter.",
       desc: "Cultured, slow-churned, with that faint tang of real dairy. Used generously and without apology.",
     },
     {
-      name: "Callebaut 70%.",
-      desc: "Belgian dark couverture of the highest order. Deep, complex, never bitter.",
+      name: "Belgian Chocolate.",
+      desc: "Premium Belgian couverture — Callebaut 70%. Deep, complex, never bitter.",
     },
     {
-      name: "The Cuberdon.",
-      desc: "The raspberry-shaped candy of Ghent. Crunchy outside, intensely sweet inside. Almost unknown outside Belgium — at Bloem, we bring it to you.",
-    },
-    {
-      name: "Pearl Sugar.",
-      desc: "Belgian cassonade — large crystals that caramelise in the iron rather than melting. What makes the first bite unmistakable.",
+      name: "Fresh Fruits.",
+      desc: "Sourced from local markets, in season — supporting independent growers with every order.",
     },
   ],
 

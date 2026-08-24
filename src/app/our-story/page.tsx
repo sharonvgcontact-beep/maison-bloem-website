@@ -198,9 +198,12 @@ export default function OurStoryPage() {
           <div className={styles.inner}>
             <div style={{ marginBottom: "2.5rem" }}>
               <SectionLabel>Our ingredients</SectionLabel>
-              <h2 className={styles.bigTitle} style={{ marginBottom: 0 }}>
+              <h2 className={styles.bigTitle}>
                 What goes <em>into it.</em>
               </h2>
+              <p className={styles.prose} style={{ maxWidth: 560 }}>
+                {s.ingredientsIntro}
+              </p>
             </div>
             <div className={styles.ingredientsGrid}>
               {s.ingredients.map((ing) => (
