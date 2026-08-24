@@ -43,7 +43,8 @@ export const menuCategories: MenuCategory[] = [
     items: [
       {
         name: "The Bloem Experience",
-        description: "Brussels waffle, one scoop of ice cream, and a topping of your choice.",
+        description:
+          "Brussels waffle, one scoop of ice cream, chocolate sauce, whipped cream, strawberry, and a topping of your choice.",
         price: "£11.15",
         imageSlot: "menu-signature-bloem-experience.jpg",
       },
