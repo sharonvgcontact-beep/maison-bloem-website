@@ -99,6 +99,7 @@ export const menuCategories: MenuCategory[] = [
         description: "Callebaut dark chocolate, steamed milk, whipped cream.",
         price: "£5.5",
         imageSlot: "menu-drinks-belgian-hot-chocolate.jpg",
+        tag: "Coming Soon",
       },
     ],
   },
