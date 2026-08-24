@@ -27,8 +27,8 @@ placeholder to the real photo — no code changes needed.
 | `menu-icecream-vanilla-bean.jpg` | Menu, Ice Cream tab | Vanilla bean scoop |
 | `menu-icecream-speculoos.jpg` | Menu, Ice Cream tab | Speculoos scoop |
 | `menu-drinks-belgian-hot-chocolate.jpg` | Menu, Drinks tab | Belgian hot chocolate |
-| `menu-combo-coffee-break.jpg` | Menu, Combos tab | Coffee Break pairing |
-| `menu-combo-sweet-moment.jpg` | Menu, Combos tab | Sweet Moment pairing |
+| `menu-combo-bloem-duo.jpg` | Menu, Combos tab | Bloem Duo pairing |
+| `menu-combo-bloem-combo.jpg` | Menu, Combos tab | Bloem Combo pairing |
 | `menu-toppings-fresh-fruits.jpg` | Menu, Toppings tab | Strawberry, blueberry, banana, raspberry |
 | `menu-toppings-whipped-cream.jpg` | Menu, Toppings tab | Whipped cream |
 | `menu-toppings-chocolate-sauce.jpg` | Menu, Toppings tab | Chocolate sauce |

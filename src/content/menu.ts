@@ -28,7 +28,7 @@ export const menuCategories: MenuCategory[] = [
     items: [
       {
         name: "Brussels Waffle",
-        description: "Golden Brussels waffle, light and crisp outside, soft at the centre.",
+        description: "Plain waffle with powder sugar and one topping choice (free).",
         price: "£7.15",
         imageSlot: "menu-classic-brussels-waffle.jpg",
       },
@@ -112,16 +112,17 @@ export const menuCategories: MenuCategory[] = [
     description: "Curated pairings for the full Maison Bloem experience.",
     items: [
       {
-        name: "Coffee Break",
-        description: "Plain Brussels waffle, with a tea or hot chocolate (up to £0.70 for select options).",
+        name: "Bloem Duo",
+        description: "Brussels waffle, paired with a Belgian hot chocolate.",
         price: "£9.95",
-        imageSlot: "menu-combo-coffee-break.jpg",
+        imageSlot: "menu-combo-bloem-duo.jpg",
       },
       {
-        name: "Sweet Moment",
-        description: "The Bloem Experience, with a tea or hot chocolate (up to £0.70 for select options).",
+        name: "Bloem Combo",
+        description: "Brussels waffle, one rose-shaped scoop, one topping, and a drink.",
         price: "£13.95",
-        imageSlot: "menu-combo-sweet-moment.jpg",
+        tag: "Best Value",
+        imageSlot: "menu-combo-bloem-combo.jpg",
       },
     ],
   },
