@@ -40,7 +40,7 @@ export const homeContent = {
     {
       tag: "Signature",
       title: "The Bloem Experience",
-      desc: "Brussels waffle, one scoop of ice cream, and a topping of your choice.",
+      desc: "Brussels waffle, one scoop of ice cream, chocolate sauce, whipped cream, strawberry, and a topping of your choice.",
       imageSlot: "menu-signature-bloem-experience.jpg",
       href: "/menu#signature",
     },
