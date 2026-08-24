@@ -9,7 +9,6 @@ placeholder to the real photo — no code changes needed.
 |---|---|---|
 | `hero-waffle.jpg` | Home, hero | Full-bleed, moody shot of a waffle fresh off the iron |
 | `grandmother-kitchen.jpg` | Home, story teaser | Warm, nostalgic kitchen scene |
-| `menu-signature-bloem.jpg` | Home, featured | "Bloem Experience" waffle |
 | `menu-seasonal-speculoos.jpg` | Home, featured | "Christmas Bloem" seasonal waffle |
 | `menu-drinks-chocobloem.jpg` | Home, featured | Hot Belgian chocolate drink |
 | `storefront-london.jpg` | Home, visit section | Exterior/interior of the London boutique |
@@ -21,15 +20,15 @@ placeholder to the real photo — no code changes needed.
 | `ingredient-butter.jpg` | Our Story, ingredients | Butter |
 | `ingredient-belgian-chocolate.jpg` | Our Story, ingredients | Chocolate |
 | `ingredient-fresh-fruits.jpg` | Our Story, ingredients | Fruits from local markets |
-| `menu-classic-bloem-simple.jpg` | Menu, Classic tab | Bloem Simple waffle |
-| `menu-signature-bloem-experience.jpg` | Menu, Signature tab | Bloem Experience waffle |
-| `menu-seasonal-bloem-season.jpg` | Menu, Seasonal tab | Bloem Season waffle |
+| `menu-classic-brussels-waffle.jpg` | Menu, Classic tab · Home, featured | Brussels Waffle |
+| `menu-signature-bloem-experience.jpg` | Menu, Signature tab · Home, featured | The Bloem Experience |
+| `menu-seasonal-bloem-special.jpg` | Menu, Seasonal tab | Seasonal Bloem Special |
 | `menu-icecream-belgian-chocolate.jpg` | Menu, Ice Cream tab | Belgian chocolate scoop |
 | `menu-icecream-vanilla-bean.jpg` | Menu, Ice Cream tab | Vanilla bean scoop |
 | `menu-icecream-speculoos.jpg` | Menu, Ice Cream tab | Speculoos scoop |
 | `menu-drinks-belgian-hot-chocolate.jpg` | Menu, Drinks tab | Belgian hot chocolate |
-| `menu-combo-bloem-duo.jpg` | Menu, Combos tab | Bloem Duo pairing |
-| `menu-combo-bloem-combo.jpg` | Menu, Combos tab | Bloem Combo pairing |
+| `menu-combo-coffee-break.jpg` | Menu, Combos tab | Coffee Break pairing |
+| `menu-combo-sweet-moment.jpg` | Menu, Combos tab | Sweet Moment pairing |
 | `menu-toppings-fresh-fruits.jpg` | Menu, Toppings tab | Strawberry, blueberry, banana, raspberry |
 | `menu-toppings-whipped-cream.jpg` | Menu, Toppings tab | Whipped cream |
 | `menu-toppings-chocolate-sauce.jpg` | Menu, Toppings tab | Chocolate sauce |

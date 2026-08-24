@@ -39,9 +39,9 @@ export const homeContent = {
   featured: [
     {
       tag: "Signature",
-      title: "Bloem Experience",
-      desc: "Callebaut 70% ganache, cuberdon candy, gold leaf, crushed speculoos.",
-      imageSlot: "menu-signature-bloem.jpg",
+      title: "The Bloem Experience",
+      desc: "Brussels waffle, one scoop of ice cream, and a topping of your choice.",
+      imageSlot: "menu-signature-bloem-experience.jpg",
       href: "/menu#signature",
     },
     {

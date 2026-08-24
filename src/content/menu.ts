@@ -1,5 +1,6 @@
-// Placeholder menu, carried over from the design exploration phase.
-// Replace with the real list at any time — every page reads straight from here.
+// Real pricing, provided by the client. Everything below is a straight
+// mirror of the official price list — edit here to update, every page
+// reads straight from this file.
 
 export type MenuItem = {
   name: string;
@@ -21,29 +22,29 @@ export const menuCategories: MenuCategory[] = [
   {
     id: "classic",
     label: "Classic",
-    title: "Bloem Simple",
+    title: "Brussels Waffle",
     description:
       "The Brussels waffle as it was always meant to be — crisp at the edge, airy within, pearl sugar caramelised into every square.",
     items: [
       {
-        name: "Bloem Simple",
+        name: "Brussels Waffle",
         description: "Golden Brussels waffle, light and crisp outside, soft at the centre.",
-        price: "£8",
-        imageSlot: "menu-classic-bloem-simple.jpg",
+        price: "£7.15",
+        imageSlot: "menu-classic-brussels-waffle.jpg",
       },
     ],
   },
   {
     id: "signature",
     label: "Signature",
-    title: "Bloem Experience",
+    title: "The Bloem Experience",
     description:
-      "Our house creations — where the waffle becomes a canvas. Designed to be savoured with the eyes as much as the palate.",
+      "Our house creation — where the waffle becomes a canvas. Designed to be savoured with the eyes as much as the palate.",
     items: [
       {
-        name: "Bloem Experience",
-        description: "Golden Brussels waffle with a rose-shaped scoop, strawberry, whipped cream, and chocolate sauce.",
-        price: "£14",
+        name: "The Bloem Experience",
+        description: "Brussels waffle, one scoop of ice cream, and a topping of your choice.",
+        price: "£11.15",
         imageSlot: "menu-signature-bloem-experience.jpg",
       },
     ],
@@ -51,39 +52,39 @@ export const menuCategories: MenuCategory[] = [
   {
     id: "seasonal",
     label: "Seasonal",
-    title: "Bloem Season",
+    title: "Seasonal Bloem Special",
     description: "Short runs, tied to the season. Ask your server what's on right now — it won't stay long.",
     items: [
       {
-        name: "Bloem Season",
+        name: "Seasonal Bloem Special",
         description: "Our signature seasonal creation, dressed with curated toppings.",
-        price: "£12",
-        imageSlot: "menu-seasonal-bloem-season.jpg",
+        price: "From £11.50",
+        imageSlot: "menu-seasonal-bloem-special.jpg",
       },
     ],
   },
   {
     id: "icecream",
     label: "Ice Cream",
-    title: "Artisan Ice Cream",
-    description: "Small-batch, churned in-house. One scoop or three — the waffle underneath is optional.",
+    title: "Extra Scoop of Ice Cream",
+    description: "Small-batch, churned in-house. Add a scoop to any waffle — £2.85, any flavour.",
     items: [
       {
         name: "Belgian Chocolate",
         description: "Callebaut 70% dark chocolate, churned slow.",
-        price: "£4.5 / scoop",
+        price: "£2.85",
         imageSlot: "menu-icecream-belgian-chocolate.jpg",
       },
       {
         name: "Vanilla Bean",
         description: "Madagascan vanilla bean, cream base.",
-        price: "£4.5 / scoop",
+        price: "£2.85",
         imageSlot: "menu-icecream-vanilla-bean.jpg",
       },
       {
         name: "Speculoos",
         description: "Cookie butter ice cream, biscuit pieces folded through.",
-        price: "£5 / scoop",
+        price: "£2.85",
         imageSlot: "menu-icecream-speculoos.jpg",
       },
     ],
@@ -97,7 +98,7 @@ export const menuCategories: MenuCategory[] = [
       {
         name: "Belgian Hot Chocolate",
         description: "Callebaut dark chocolate, steamed milk, whipped cream.",
-        price: "£5.5",
+        price: "£3.50",
         imageSlot: "menu-drinks-belgian-hot-chocolate.jpg",
         tag: "Coming Soon",
       },
@@ -110,17 +111,16 @@ export const menuCategories: MenuCategory[] = [
     description: "Curated pairings for the full Maison Bloem experience.",
     items: [
       {
-        name: "Bloem Duo",
-        description: "Brussels waffle, paired with a Belgian hot chocolate.",
-        price: "£14",
-        imageSlot: "menu-combo-bloem-duo.jpg",
+        name: "Coffee Break",
+        description: "Plain Brussels waffle, with a tea or hot chocolate (up to £0.70 for select options).",
+        price: "£9.95",
+        imageSlot: "menu-combo-coffee-break.jpg",
       },
       {
-        name: "Bloem Combo",
-        description: "Brussels waffle, one rose-shaped scoop, one topping, and a drink.",
-        price: "£18",
-        tag: "Best Value",
-        imageSlot: "menu-combo-bloem-combo.jpg",
+        name: "Sweet Moment",
+        description: "The Bloem Experience, with a tea or hot chocolate (up to £0.70 for select options).",
+        price: "£13.95",
+        imageSlot: "menu-combo-sweet-moment.jpg",
       },
     ],
   },
@@ -128,36 +128,36 @@ export const menuCategories: MenuCategory[] = [
     id: "toppings",
     label: "Toppings",
     title: "Extra Toppings",
-    description: "Make it yours — add any of these to a waffle, a scoop, or both.",
+    description: "Make it yours — add any of these to a waffle, a scoop, or both. £0.50 each.",
     items: [
       {
         name: "Fresh Fruits",
         description: "Strawberry, blueberry, banana, raspberry.",
-        price: "£1.5",
+        price: "£0.50",
         imageSlot: "menu-toppings-fresh-fruits.jpg",
       },
       {
         name: "Whipped Cream",
         description: "Light, lightly sweetened.",
-        price: "£1",
+        price: "£0.50",
         imageSlot: "menu-toppings-whipped-cream.jpg",
       },
       {
         name: "Chocolate Sauce",
         description: "Callebaut 70%, warm.",
-        price: "£1.5",
+        price: "£0.50",
         imageSlot: "menu-toppings-chocolate-sauce.jpg",
       },
       {
         name: "Hazelnuts",
         description: "Toasted, roughly chopped.",
-        price: "£1.5",
+        price: "£0.50",
         imageSlot: "menu-toppings-hazelnuts.jpg",
       },
       {
         name: "Cuberdon Sauce",
         description: "Raspberry syrup, inspired by the candy of Ghent.",
-        price: "£2",
+        price: "£0.50",
         imageSlot: "menu-toppings-cuberdon-sauce.jpg",
       },
     ],
