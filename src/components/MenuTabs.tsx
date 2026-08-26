@@ -72,6 +72,7 @@ export default function MenuTabs({ categories }: Props) {
                   alt={item.name}
                   variant={variantByCategory[category.id] ?? "warm"}
                   hasReal={item.hasImage}
+                  fit="contain"
                 />
               </div>
               <div className={styles.itemBody}>
