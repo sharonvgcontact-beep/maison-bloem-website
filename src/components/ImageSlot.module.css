@@ -12,6 +12,11 @@
   object-fit: cover;
 }
 
+.contain {
+  object-fit: contain;
+  background: var(--white);
+}
+
 /* Diagonal duotone split, in place of a generic soft gradient blob — each
    placeholder reads as a deliberate graphic panel rather than filler. */
 .warm {
